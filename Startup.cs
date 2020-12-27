@@ -31,6 +31,8 @@ namespace dotnet_api_docs_redoc
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "dotnet_api_docs_redoc", Version = "v1" });
+            
+            c.EnableAnnotations();
             });
         }
 
